@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de Finanças</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ESSA É SUA ÁREA DE FINANÇAS.</h1>
+    <h2>DEPOSITE, RESGATE </h2>
+    <h3>E VEJA SEU HISTÓRICO DE TRANSAÇÕES</h3>
+  </header>
+  
+  <main class="main-content">
+    <section class="profile-section">
+      <div class="profile">
+        <img src="User.png" alt="Avatar do usuário">
+        <h1>Deposite ou solicite seu resgate ✨</h1>
+        <small>O resgate demora até 48h úteis para serem aprovados.
+
+        </small>
+        <p> Membro desde 2022.</p>
+        
+      </div>
+      <div class="balance">
+        <h2> <img src="Money.png" alt="moeda"></h2>
+        <h3>SALDO</h3>
+        <p>_____________</p>
+        <p>R$ <span>15,00</span></p>
+      </div>
+      <div class="transactions">
+        <h2> <img src="Coin.png" alt="moeda"></h2>
+        <h3>TRADECOINS</h3>
+        <p>_________________________________</p>
+        <p><span>1.257</span></p>
+      </div>
+    </section>
+
+    <section class="actions-section">
+      <div class="deposito-card">
+        <h4>DEPOSITAR</h4>
+        <p>Valor que deseja depositar:</p>
+        <input type="text" placeholder="R$ 0,00">
+        <button>Solicitar resgate</button>
+        <img src="QRCode.png">
+        <p class= codigo > <button>Copiar código</button> </p>
+  
+        <p class=info >Este QR code expira em 30 minutos. Ao realizar o pagamento, você será informado por e-mail
+        </p>
+      </div> 
+
+
+
+
+      <div class="action-card">
+        <h4>RESGATAR</h4>
+        <p>Valor que deseja resgatar via PIX:</p>
+        <input type="text" placeholder="R$ 0,00">
+        <select>
+          <option>Selecione sua chave PIX</option>
+        </select>
+        <button>Solicitar resgate</button>
+        <p class="info">Os resgates são realizados em até 48h úteis.</p>
+      </div>
+      <div class="action-card">
+        <h4>CUPOM</h4>
+        <p>Insira o código abaixo para resgatar um bônus:</p>
+        <input type="text" placeholder="Código">
+        <button>Validar</button>
+        <p class="info">O valor creditado será descontado no próximo depósito.</p>
+      </div>
+    </section>
+
+    <section class="extract-section">
+      <h4>Extrato</h4>
+      <label for="date-filter">Selecionar período:</label>
+      <select id="date-filter">
+        <option>15 mai - 20 mai</option>
+      </select>
+      <table>
+        <thead>
+          <tr>
+            <th>Data da transação</th>
+            <th>Valor</th>
+            <th>Saldo</th>
+            <th>Informação adicional</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>27/07/2023, 10:53</td>
+            <td>+R$150 TrackCoins</td>
+            <td>R$1.123,27</td>
+            <td>Premiação Conta Safe</td>
+            <td>Recuperação diária</td>
+          </tr>
+          <!-- Adicionar mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
+
